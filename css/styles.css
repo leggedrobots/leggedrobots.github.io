@@ -10610,3 +10610,30 @@ div.team-memberr img {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td, th {
+  border: 0px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {background-color: #dddddd;}
+
+tr:hover {
+  background-color: var(--main-color);
+  color: white;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
