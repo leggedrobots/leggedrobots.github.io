@@ -127,7 +127,17 @@ XXX
 <em>Francesco Ruscelli, Arturo Laurenzi, Nikos G. Tsagarakis, and Enrico Mingo Hoffman</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper5">Abstract and Paper</button>
 <div id="paper5" class="collapse section-subheading-contrib">
-XXX
+For legged robots to perform agile, highly dy-
+namic and contact-rich motions, whole-body trajectories com-
+putation of under-actuated complex systems subject to non-
+linear dynamics is required. In this work, we present hands-
+on applications of Horizon, a novel open-source framework
+for trajectory optimization tailored to robotic systems, that
+provides a collection of tools to simplify dynamic motion
+generation. Horizon was tested on a broad range of behaviours
+involving several robotic platforms: we introduce its building
+blocks and describe the complete procedure to generate three
+complex motions using its intuitive and straightforward API.
 <br> <br>
 <iframe src="./assets/pdfs/paper5.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -141,7 +151,24 @@ XXX
 <em>Yanran Ding, Charles Khazoom, Matthew Chignoli, and Sangbae Kim</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper6">Abstract and Paper</button>
 <div id="paper6" class="collapse section-subheading-contrib">
-XXX
+ This paper proposes a model predictive control
+(MPC) framework for realizing dynamic walking gaits on the
+MIT Humanoid. In addition to adapting footstep location and
+timing online, the proposed method can reason about varying
+height, contact wrench, torso rotation, kinematic limit and
+negotiating uneven terrains. Specifically, a linear MPC (LMPC)
+optimizes for the desired footstep location by linearizing the
+single rigid body dynamics with respect to the current footstep
+location. A low-level task-space controller tracks the predicted
+state and control trajectories from the LMPC to leverage the
+full-body dynamics. Finally, an adaptive gait frequency scheme
+is employed to modify the step frequency and enhance the
+robustness of the walking controller. 
+Both LMPC and taskspace control can be efficiently solved as quadratic programs
+(QP), and thus amenable for real-time applications. Simulation
+studies where the MIT Humanoid traverses a wave field and
+recovers from impulsive disturbances validated the proposed
+approach.
 <br> <br>
 <iframe src="./assets/pdfs/paper6.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -155,7 +182,30 @@ XXX
 <em>Takahiro Miki, Joonho Lee, Jemin Hwangbo, Lorenz Wellhausen, Vladlen Koltun, and Marco Hutter</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper7">Abstract and Paper</button>
 <div id="paper7" class="collapse section-subheading-contrib">
-XXX
+Legged robots that can operate autonomously
+in remote and hazardous environments will greatly increase
+opportunities for exploration into under-explored areas. Exteroceptive perception is crucial for fast and energy-efficient
+locomotion: perceiving the terrain before making contact with
+it enables planning and adaptation of the gait ahead of time to
+maintain speed and stability. However, utilizing exteroceptive
+perception robustly for locomotion has remained a grand
+challenge in robotics. Snow, vegetation, and water visually
+appear as obstacles on which the robot cannot step – or
+are missing altogether due to high reflectance. Additionally,
+depth perception can degrade due to difficult lighting, dust,
+fog, reflective or transparent surfaces, sensor occlusion, and
+more. For this reason, the most robust and general solutions
+to legged locomotion to date rely solely on proprioception.
+This severely limits locomotion speed, because the robot has
+to physically feel out the terrain before adapting its gait
+accordingly. Here we present a robust and general solution
+to integrating exteroceptive and proprioceptive perception for
+legged locomotion. We leverage an attention-based recurrent
+encoder that integrates proprioceptive and exteroceptive input.
+The encoder is trained end-to-end and learns to seamlessly
+combine the different perception modalities without resorting
+to heuristics. The result is a legged locomotion controller with
+high robustness and speed.
 <br> <br>
 <iframe src="./assets/pdfs/paper7.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -169,7 +219,26 @@ XXX
 <em>Luca Rossini, Paolo Ferrari, Francesco Ruscelli, Arturo Laurenzi, Nikos G. Tsagarakis, and Enrico Mingo Hoffman</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper8">Abstract and Paper</button>
 <div id="paper8" class="collapse section-subheading-contrib">
-XXX
+The deployment of robots within realistic environments requires the capability to plan and refine the locomanipulation trajectories on the fly to avoid unexpected interactions with a dynamic environment. This extended abstract
+provides a pipeline to offline plan a configuration space global
+trajectory based on a randomized strategy, and to online locally
+refine it depending on any change of the dynamic environment
+and the robot state. The offline planner directly plans in the
+contact space, and additionally seeks for whole-body feasible
+configurations compliant with the sampled contact states. The
+planned trajectory, made by a discrete set of contacts and
+configurations, can be seen as a graph and it can be online
+refined during the execution of the global trajectory. The online
+refinement is carried out by a graph optimization planner
+exploiting visual information. It locally acts on the global initial
+plan to account for possible changes in the environment. While
+the offline planner is a concluded work, tested on the humanoid
+COMAN+, the online local planner is still a work-in-progress
+which has been tested on a reduced model of the CENTAURO
+robot to avoid dynamic and static obstacles interfering with a
+wheeled motion task. Both the COMAN+ and the CENTAURO
+robots have been designed at the Italian Institute of Technology
+(IIT).
 <br> <br>
 <iframe src="./assets/pdfs/paper8.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>

@@ -15,6 +15,8 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
 <!-- Core theme CSS (includes Bootstrap)-->
 <link href="css/styles.css" rel="stylesheet" />
+<!-- Using a Thumbnail -->
+<link rel="image_src" href="./assets/slides_drawing.svg">
 </head>
 <body id="page-top">
 <!-- Navigation-->
@@ -423,9 +425,40 @@ Close Project
 <!-- Project Details Go Here-->
 <h2 class="text-uppercase">Alex Li</h2>
 <p class="item-intro text-muted">University of Edinburgh, UK</p>
-<p class="text-capitalize font-weight-bold">title is here</p>
-<p>Abstract</p>
-<p>Bio</p>
+<p class="text-capitalize font-weight-bold">Multi-Expert Learning of Adaptive Skills and Perceptual Locomotion</p>
+<p>This talk focuses on the recent advances in learning-based control for legged
+locomotion, featuring multi-skill locomotion and perceptual locomotion. The talk will
+briefly review the state of the art in legged locomotion first, primarily on the &quot;deep
+reinforcement learning&quot; for continuous robot control in recent years.
+Then I will elaborate on the ideas and principles of multi-expert architecture for
+diversifying and fusing expert skills, and show how new locomotion skills perform in fall
+recovery, trotting, target-following and any arbitrary transitions. Followed by a brief
+introduction of how this architecture can be extended for manipulation. Then, I will
+present the meta-learning approach, in which the robot can constantly updates the
+interaction model and applies Model Predictive Control for generating the optimal
+actions to maximize the reward. The meta-learning approach learns different latent
+vectors of each condition and achieves online model adaptation within 0.2s, and the
+SpotMicro robot can produce adaptive and robust locomotion under changing ground
+friction, external pushes, and different robot dynamics including motor failures and the
+whole leg amputation.
+Lastly, we will take a look how perceptual locomotion can be achieved using only sparse
+visual feedback from direct depth measurements and yet the Anymal robot can traverse
+over a range of common terrains in human-centered environments (steps, ramps, gaps,
+and stairs). The talk will be concluded with a short interactive open discussion about the
+future directions and how researchers from different disciplines can collaborate and
+explore new research areas.</p>
+<p>Dr Zhibin (Alex) Li is an Associate Professor at the University College London and leads
+the Advanced Robotics Intelligence Laboratory. His work in 2019-2020 - &quot;multi-expert
+learning of adaptive legged locomotion&quot; - is the first implementation of a multi-expert
+learning architecture for adaptive quadrupedal locomotion on a real robot (December
+2020 issue, Science Robotics).
+His research interest covers dynamic motion skills of locomotion and manipulation,
+optimization-based motion planning and control, and deep reinforcement learning for
+robot motor learning including locomotion, manipulation and grasping. He led the
+theme of &quot;Shared and Autonomous Manipulation&quot; in joint cross-hub demonstration of
+the UK National Robotics and Artificial Intelligence Hubs, and is working to develop
+novel optimization and learning based robot control to achieve a new level of robot
+autonomy and intelligence.</p>
 <button class="btn btn-primary" data-dismiss="modal" type="button">
 <i class="fas fa-times mr-1"></i>
 Close Project
@@ -543,9 +576,13 @@ Close Project
 <!-- Project Details Go Here-->
 <h2 class="text-uppercase">Robin Deits</h2>
 <p class="item-intro text-muted">Boston Dynamics, USA</p>
-<p class="text-capitalize font-weight-bold">title is here</p>
-<p>Abstract</p>
-<p>Bio</p>
+<p class="text-capitalize font-weight-bold">Making Atlas Dance, Run, and Jump</p>
+<div class="section-subheading-speaker ">
+<strong>Abstract: </strong>The Boston Dynamics Atlas humanoid robot can run, jump, flip, and dance using its 28 hydraulically-actuated joints. In this talk, I will discuss how we design behaviors for Atlas using trajectory optimization and animation, how we map those plans onto the world using perception, and how we execute those behaviors using nonlinear model-predictive control. I will also show how our recent developments in model-predictive control have improved whole-body coordination and performance for Atlas.
+</div>
+<div class="section-subheading-speaker ">
+<strong>Bio: </strong>Robin Deits has been excited about walking robots since his first Lego Mindstorms kit. He spent his PhD years in the Robot Locomotion Group at MIT, where he worked on footstep planning and whole-body control during the DARPA Robotics Challenge. He is now a principal engineer at Boston Dynamics, where he works on behavior development and control for the latest generation of Atlas humanoid robots. 
+</div>
 <button class="btn btn-primary" data-dismiss="modal" type="button">
 <i class="fas fa-times mr-1"></i>
 Close Project
@@ -584,7 +621,7 @@ Close Project
 <p class="text-capitalize font-weight-bold">title is here</p>
 <p>Abstract</p>
 <div class="section-subheading-speaker ">
-<strong>Bio:</strong>Jonathan W. Hurst is a Professor of Robotics, co-founder of the Oregon State University Robotics Institute, and Chief Technology Officer and co-founder of Agility Robotics. He holds a B.S. in mechanical engineering and an M.S. and Ph.D. in robotics, all from Carnegie Mellon University. His university research focuses on understanding the fundamental science and engineering best practices for legged locomotion. Investigations range from numerical studies and analysis of animal data, to simulation studies of theoretical models, to designing, constructing, and experimenting with legged robots for walking and running, and more recently, using machine learning techniques merged with more traditional control to enable highly dynamic gaits. Agility Robotics is extending this research to commercial applications for robotic legged mobility, working towards a day when robots can go where people go, generate greater productivity across the economy, and improve quality of life for all.
+<strong>Bio: </strong>Jonathan W. Hurst is a Professor of Robotics, co-founder of the Oregon State University Robotics Institute, and Chief Technology Officer and co-founder of Agility Robotics. He holds a B.S. in mechanical engineering and an M.S. and Ph.D. in robotics, all from Carnegie Mellon University. His university research focuses on understanding the fundamental science and engineering best practices for legged locomotion. Investigations range from numerical studies and analysis of animal data, to simulation studies of theoretical models, to designing, constructing, and experimenting with legged robots for walking and running, and more recently, using machine learning techniques merged with more traditional control to enable highly dynamic gaits. Agility Robotics is extending this research to commercial applications for robotic legged mobility, working towards a day when robots can go where people go, generate greater productivity across the economy, and improve quality of life for all.
 </div>
 <button class="btn btn-primary" data-dismiss="modal" type="button">
 <i class="fas fa-times mr-1"></i>
