@@ -115,11 +115,31 @@ of WoLF and its overall software architecture.
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[4] Legged Navigation Planning in the DARPA Subterranean Challenge (Recent Work)</strong><br>
+<strong>[4] Legged Navigation Planning in the DARPA Subterranean Challenge (Original Work)</strong><br>
 <em>Lorenz Wellhausen and Marco Hutter</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper4">Abstract and Paper</button>
 <div id="paper4" class="collapse section-subheading-contrib">
-XXX
+Navigation planning for legged robots has distinct
+challenges compared to wheeled and tracked systems due to
+the ability to lift legs off the ground and step over obstacles.
+While most navigation planners assume a fixed traversability
+value for a single terrain patch, we had previously proposed a
+reachability-based navigation planner for legged robots, which
+approximates the robot morphology by a set of reachability and
+body volumes. It uses a learned convolutional neural network
+to restrict valid footholds to feasible regions and incrementally
+builds a probabilistic roadmap graph for fast planning queries.
+We extend this work using an additional neural network trained
+in simulation, which predicts locomotion cost and risk over
+a given terrain. This produces safe and low-cost paths and
+increases planning speed by leveraging batched processing
+of the cost prediction network on GPU to rapidly validate
+navigation graph edges through locomotion risk thresholding.
+We deployed this navigation planner in team CERBERUS’
+winning entry to the DARPA Subterranean Challenge finals,
+where the proposed planner powered the local navigation of
+four ANYmal quadrupeds during all three competition runs
+without a single navigation failure.
 <br> <br>
 <iframe src="./assets/pdfs/paper4.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -388,7 +408,19 @@ resilience of the platform.
 <em>Ioannis Dadiotis, Arturo Laurenzi and Nikos Tsagarakis</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper15">Abstract and Paper</button>
 <div id="paper15" class="collapse section-subheading-contrib">
-XXX
+This work presents a simplified model-based tra-
+jectory optimization (TO) formulation for planning motions on
+quadruped mobile manipulators that locomote while carrying
+heavy payload. The formulation considers both robot and
+payload dynamics and simultaneously plans locomotion and
+payload manipulation trajectories. Thanks to the heavy payload
+manipulation planning the resulted payload-aware planner
+is less prone to leg singular configurations in kinematically
+demanding motions compared to its locomotion-only counter-
+part. The method is validated on the quadruped bi-manual
+CENTAURO robot carrying a payload that consists 85 % of
+the arms’ payload capacity and exceeds 15 % of the robot’s
+mass.
 <br> <br>
 <iframe src="./assets/pdfs/paper15.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -444,7 +476,18 @@ XXX
 <em>Joseph Norby, Yanhao Yang, Ardalan Tajbakhsh, Jiming Ren, Justin K. Yim, Alexandra Stutt, Qishun Yu, and Aaron M. Johnson</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper19">Abstract and Paper</button>
 <div id="paper19" class="collapse section-subheading-contrib">
-XXX
+This work presents Quad-SDK, an open source
+ROS-based full stack software framework for agile quadrupedal
+locomotion. The design of Quad-SDK is focused on the vertical
+integration of planning, control, estimation, communication,
+and development tools which enable agile quadrupedal locomotion in simulation and hardware with minimal user changes
+for multiple platforms. Furthermore, the modular software
+architecture allows researchers to experiment with their own
+implementations of different components while leveraging the
+existing framework. Quad-SDK also offers Gazebo simulation
+support and a suite of visualization and data-processing tools
+for rapid development. This work presents the high-level architecture of the software, its core features, and demonstrations
+of the agile locomotion it enables.
 <br> <br>
 <iframe src="./assets/pdfs/paper19.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -501,11 +544,22 @@ XXX
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[22] Proprioception and Tail Control Enable Extreme Terrain Traversal by Quadruped Robots (Recent Work)</strong><br>
+<strong>[22] Proprioception and Tail Control Enable Extreme Terrain Traversal by Quadruped Robots (Original Work)</strong><br>
 <em>Yanhao Yang, Joseph Norby, Justin K. Yim, and Aaron M. Johnson</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper22">Abstract and Paper</button>
 <div id="paper22" class="collapse section-subheading-contrib">
-XXX
+Legged robotic systems leverage ground contact and
+the reaction forces they provide to achieve agile locomotion.
+However, uncertainty coupled with the discontinuous nature of
+contact can lead to failure in real-world environments with
+unexpected height variations, such as rocky hills or curbs. To
+enable dynamic traversal of extreme terrain, this work introduces
+the utilization of proprioception to estimate and react to unknown
+hybrid events and elevation changes and a two-degree-of-freedom
+tail to improve control independent of contact. Simulation results
+over unforeseen elevation changes show that our method can
+stabilize locomotion over height changes of up to 1.5 times the
+leg length.
 <br> <br>
 <iframe src="./assets/pdfs/paper22.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -626,7 +680,22 @@ the experiments.
 <em>Vassilios Tsounis, Ruben Grandia, Farbod Farshidian, and Marco Hutter</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper28">Abstract and Paper</button>
 <div id="paper28" class="collapse section-subheading-contrib">
-XXX
+This work addresses the problem of multi-contact
+motion planning for quadrupedal legged robots on non-flat
+terrain. A common challenge in this domain is the selection of a
+contact schedule (i.e. contact configurations and contact switching
+event times) and respective sequences of foothold positions. Our
+approach is centered on formulating Markov decision processes
+using the evaluation of kinematic and dynamic feasibility criteria
+in the form of linear programs and are used in place of physical
+simulation. The resulting MDPs are solved using a policy-
+gradient-based reinforcement learning algorithm. Specifically, we
+train neural-network policies which generate reference foothold
+positions, Center-of-Mass poses and velocities as well contact
+switching timings. We evaluate our method in unstructured
+environments using proprioceptive and exteroceptive sensory
+input and on a suite of relevant terrain scenarios such as stairs,
+gaps and stepping stones.
 <br> <br>
 <iframe src="./assets/pdfs/paper28.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
