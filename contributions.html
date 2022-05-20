@@ -444,11 +444,25 @@ mass.
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[16] Accelerating Hybrid Systems Differential Dynamic Programming (Recent Work)</strong><br>
+<strong>[16] Accelerating Hybrid Systems Differential Dynamic Programming (Original Work)</strong><br>
 <em>John Nganga and Patrick M. Wensing</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper16">Abstract and Paper</button>
 <div id="paper16" class="collapse section-subheading-contrib">
-XXX
+This abstract presents methods that reduce the
+computational demand of including second-order dynamics
+sensitivity information into optimization algorithms for robots
+in contact with the environment. The work extends a previous
+study on unconstrained whole-body motion planning. A full
+second-order Differential Dynamic Programming (DDP) algorithm is presented where all the necessary dynamics partial
+derivatives are computed with lower computational complexity
+than conventional DDP methods. Compared to using a firstorder approximation, the second-order partials more accurately
+represent the dynamics locally, but since they are tensorial and
+expensive to compute, they are often ignored. This work illustrates how to avoid the need for computing the derivative tensor
+by instead leveraging reverse-mode accumulation of derivatives.
+We also exploit the structure of the contact-constrained dynamics to further accelerate these computations. The relative
+performance of the proposed approach is benchmarked on a
+simulated model of the MIT Mini Cheetah executing a bounding
+gait
 <br> <br>
 <iframe src="./assets/pdfs/paper16.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
