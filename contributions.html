@@ -292,7 +292,21 @@ XXX
 <em>Sangli Teng and Maani Ghaffari</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper10">Abstract and Paper</button>
 <div id="paper10" class="collapse section-subheading-contrib">
-XXX
+Rigid body model has been widely adopted to
+plan the centroidal motion of legged robot. However, the
+rigid body motion evolves on the SE(3) manifold, which is
+nonlinear and not trivial to parameterize. The existing Model
+Predictive Control (MPC) either uses local parameterization
+that suffers from singularities, or geometric based liearization
+that makes the problem state dependent or hard to vectorize.
+In this work, we focus on the MPC on matrix Lie group.
+We linearize the configuration error and design a quadratic
+cost function in its Lie algebra. Given an initial condition, the
+linearized configuration error dynamics is globally valid and
+evolve independently of the system trajectory. The quadratic
+cost function could also ensure exponential convergence rate.
+The proposed MPC has been experimentally validated in MIT
+mini Cheetah locomotion and pose control.
 <br> <br>
 <iframe src="./assets/pdfs/paper10.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -534,7 +548,20 @@ bounded magnitudes.
 <em>Wilson Jallet, Antoine Bambade, Nicolas Mansard and Justin Carpentier</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper21">Abstract and Paper</button>
 <div id="paper21" class="collapse section-subheading-contrib">
-XXX
+Mathematical optimization is the workhorse be-
+hind several aspects of modern robotics and control. In these
+applications, the focus is on constrained optimization, and the
+ability to work on manifolds (such as the classical matrix
+Lie groups), along with a specific requirement for robustness
+and speed. In recent years, augmented Lagrangian methods
+have seen a resurgence due to their robustness and flexibility,
+their connections to (inexact) proximal-point methods, and
+their interoperability with Newton or semismooth Newton
+methods. In the sequel, we present primal-dual augmented
+Lagrangian method for inequality-constrained problems on
+manifolds, which we introduced in our recent work, as well
+as an efficient C++ implementation suitable for use in robotics
+applications and beyond.
 <br> <br>
 <iframe src="./assets/pdfs/paper21.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
