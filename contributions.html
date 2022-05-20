@@ -282,11 +282,21 @@ XXX
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[11] Nonlinear Model Predictive Control for Quadrupedal Locomotion Using Second-Order Sensitivity Analysis (Recent Work)</strong><br>
+<strong>[11] Nonlinear Model Predictive Control for Quadrupedal Locomotion Using Second-Order Sensitivity Analysis (Original Work)</strong><br>
 <em>Dongho Kang, Flavio De Vincenti, Stelian Coros</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper11">Abstract and Paper</button>
 <div id="paper11" class="collapse section-subheading-contrib">
-XXX
+We present a versatile nonlinear model predictive
+control (NMPC) approach for quadrupedal locomotion. Our
+formulation jointly optimizes a base trajectory and a set
+of footholds over a finite time horizon based on simplified
+dynamics models. We leverage second-order sensitivity analysis
+and a sparse Gauss-Newton (SGN) method to solve the resulting
+optimal control problems. We further describe our ongoing
+effort to verify our approach through simulation and hardware
+experiments. Finally, we extend our locomotion framework
+to deal with challenging tasks that comprise gap crossing,
+movement on stepping stones, and multi-robot control.
 <br> <br>
 <iframe src="./assets/pdfs/paper11.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -296,11 +306,30 @@ XXX
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[12] Neck Design for Robust Visual-Inertial State Estimation during Aggressive Locomotion with Dynamic Vibration Absorber (Recent Work)</strong><br>
+<strong>[12] Neck Design for Robust Visual-Inertial State Estimation during Aggressive Locomotion with Dynamic Vibration Absorber (Original Work)</strong><br>
 <em>Taekyun Kim and Dongjun Lee</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper12">Abstract and Paper</button>
 <div id="paper12" class="collapse section-subheading-contrib">
-XXX
+We propose a new neck design of legged robots
+to achieve robust visual-inertial state estimation in dynamic
+locomotion. Our neck design absorbs the impact from the
+legs and reduces the periodic vertical movement of the head
+using the dynamic vibration absorber (DVA), which can readily
+adapt to the frequency of oscillation of the body. Due to this
+smooth movement of the head, sensors in the head can measure
+data stably, which is impossible when sensors are directly
+attached to the body. We present the mechanical design of the
+neck as a combination of suspension mechanism with dynamic
+vibration absorber, which provide an adjustable notch filter for
+the vertical motion of the robot. Simulation and experimental
+results are performed to verify the effect of the proposed neck
+on the head of robots, manifesting that the states estimated
+from the visual-inertial sensors on the head can be precise
+even during aggressive motion by rendering both the inertial
+information and the feature tracking more stable and robust.
+The presented design can overcome the disadvantage that the
+localization of robots with legs can only operate well in gentle
+locomotion.
 <br> <br>
 <iframe src="./assets/pdfs/paper12.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -429,7 +458,26 @@ XXX
 <em>Zhaoyuan Gu, Nathan Boyd, and Ye Zhao</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper20">Abstract and Paper</button>
 <div id="paper20" class="collapse section-subheading-contrib">
-XXX
+In this abstract, we examine the problem of push
+recovery for bipedal robot locomotion and present a reactive
+decision-making and robust planning framework for locomotion
+resilient to external perturbations. Rejecting perturbations is
+an essential capability of bipedal robots and has been widely
+studied in the locomotion literature. However, adversarial
+disturbances and aggressive turning can lead to negative lateral
+step width (i.e., crossed-leg scenarios) with unstable motions
+and self-collision risks. These motion planning problems are
+computationally difficult and have not been explored under a
+hierarchically integrated task and motion planning method. We
+explore a planning and decision-making framework that closely
+ties linear-temporal-logic-based reactive synthesis with trajectory optimization incorporating the robot’s full-body dynamics,
+kinematics, and leg collision avoidance constraints. Between
+the high-level discrete symbolic decision-making and the lowlevel continuous motion planning, behavior trees serve as a
+reactive interface to handle perturbations occurring at any time
+of the locomotion process. Our experimental results show the
+efficacy of our method in generating resilient recovery behaviors
+in response to diverse perturbations from any direction with
+bounded magnitudes.
 <br> <br>
 <iframe src="./assets/pdfs/paper20.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -506,7 +554,12 @@ XXX
 <em>Lorenzo Amatucci, Joon-Ha Kim, Jemin Hwangbo and Hae-Won Park</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper25">Abstract and Paper</button>
 <div id="paper25" class="collapse section-subheading-contrib">
-XXX
+In this work, we show the implementation of a
+control framework for non-gaited legged system control. The
+presented approach decouples the gait optimization from the
+motion stabilization treating the contact phase as a decision
+variable. The system has been tested against the state-of-theart Mixed Integer Quadratic Programming solver and verified
+in various simulation environments.
 <br> <br>
 <iframe src="./assets/pdfs/paper25.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
