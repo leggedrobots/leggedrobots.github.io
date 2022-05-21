@@ -274,11 +274,23 @@ robots have been designed at the Italian Institute of Technology
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[9] A Quadruped Inertial Param Estimation Method with End-Effectors Bi-sectional Search and Sinusoidal Rotation Excitations (Recent Work)</strong><br>
+<strong>[9] A Quadruped Inertial Param Estimation Method with End-Effectors Bi-sectional Search and Sinusoidal Rotation Excitations (Original Work)</strong><br>
 <em>Chi Yen Lee and Zachary Manchester</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper9">Abstract and Paper</button>
 <div id="paper9" class="collapse section-subheading-contrib">
-XXX
+In this paper, we introduce a two-step calibration
+routine to identify the planar center of mass (CoM) position and
+the effective centroidal dynamics parameters of any quadruped
+using only joint sensors and an inertial measurement unit
+(IMU). Our proposed calibration routine consists of two steps:
+A bisection search method is used to locate the position of
+the planar CoM, and a sinusoidal excitation method is used
+to extract moments of inertia about each body axis. We verifu
+the inertial parameter identification method in simulation, and
+we implemented the center of mass finding algorithm in both
+simulation and hardware. The results of hardware CoM finding
+experiments verified in a balancing controller that requires
+5mm CoM position accuracy.
 <br> <br>
 <iframe src="./assets/pdfs/paper9.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -373,11 +385,23 @@ locomotion.
 <!-- ============================================================================================================= -->
 <!-- ============================================================================================================= -->
 <div class="section-subheading-normal ">
-<strong>[13] Reaction Wheel Assisted Locomotion for Legged Robots (Recent Work)</strong><br>
+<strong>[13] Reaction Wheel Assisted Locomotion for Legged Robots (Original Work)</strong><br>
 <em>Chi-Yen Lee, Shuo Yang, Benjamin Bokser, and Zachary Manchester</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper13">Abstract and Paper</button>
 <div id="paper13" class="collapse section-subheading-contrib">
-XXX
+In this paper, we introduce a Model Predictive
+Control (MPC) formulation that calculates the ground reaction forces and torques for a quadruped equipped with two
+reaction wheels. We augment the centroidal dynamics with two
+additional angular momentum states from the wheels, and we
+further simplify the dynamics to formulate the problem as a
+convex quadratic program. With the simplified dynamics, we
+are able to run a hardware implementation of the MPC with a
+ten-time-step horizon and close the control loop at 250 Hertz.
+Experiment and simulation results demonstrate improved attitude stabilization and up to 40 percent reduction in angular
+error. A video demonstration of some of the experiments is
+available1
+. Our approach and formulation provide a framework
+for more involved acrobatic maneuvers for future work.
 <br> <br>
 <iframe src="./assets/pdfs/paper13.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
@@ -490,7 +514,19 @@ XXX
 <em>Avadesh Meduri, Paarth Shah, Julian Viereck, Majid Khadiv, Ioannis Havoutis and Ludovic Righetti</em><br>
 <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper18">Abstract and Paper</button>
 <div id="paper18" class="collapse section-subheading-contrib">
-XXX
+Online planning of whole-body motions for legged
+robots is challenging due to the inherent nonlinearity in the
+robot dynamics. To address this limitation, we propose a nonlinear MPC framework, the BiConMP, which can generate whole
+body trajectories online by efficiently exploiting the structure
+of the robot dynamics. BiConMP is used to generate various
+cyclic gaits on a real quadruped robot and its performance
+is evaluated on different terrain, countering unforeseen pushes
+and transitioning online between different gaits. Further, we
+demonstrate the ability of BiConMP to generate non-trivial
+acyclic whole-body dynamic motions on the robot. Finally, an
+extensive empirical analysis on the effects of planning horizon
+and frequency on the nonlinear MPC framework is reported
+and discussed.
 <br> <br>
 <iframe src="./assets/pdfs/paper18.pdf#zoom=FitW" height="1000" width="100%"></iframe>
 </div>
