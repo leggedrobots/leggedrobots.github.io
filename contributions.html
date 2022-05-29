@@ -36,10 +36,111 @@
 <section class="page-section-big" id="contrib">
 <div class="container">
 <div class="text-center">
-<h2 class="section-heading text-uppercase">Accepted Papers</h2>
+<h2 class="section-heading text-uppercase">Best Papers</h2>
 <div class="section-subheading-normal">
-The proceedings of the 6th Workshop on Legged Robots.
+These are the papers that were selected for the best paper award.
 </div>
+<div class="section-subheading-normal">
+<strong>
+Quad-SDK: Full Stack Software Framework for Agile Quadrupedal Locomotion (Winner)<br></strong>
+<em>J. Norby, Y. Yang, A. Tajbakhsh, J. Ren, J. K. Yim, A. Stutt, Q. Yu, and A. M. Johnson</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper19">Abstract and Paper</button>
+<div id="paper19" class="collapse section-subheading-contrib">
+This work presents Quad-SDK, an open source
+ROS-based full stack software framework for agile quadrupedal
+locomotion. The design of Quad-SDK is focused on the vertical
+integration of planning, control, estimation, communication,
+and development tools which enable agile quadrupedal locomotion in simulation and hardware with minimal user changes
+for multiple platforms. Furthermore, the modular software
+architecture allows researchers to experiment with their own
+implementations of different components while leveraging the
+existing framework. Quad-SDK also offers Gazebo simulation
+support and a suite of visualization and data-processing tools
+for rapid development. This work presents the high-level architecture of the software, its core features, and demonstrations
+of the agile locomotion it enables.
+<br> <br>
+<iframe src="./assets/pdfs/paper19.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+<div class="section-subheading-normal">
+<strong>Accelerating Hybrid Systems Differential Dynamic Programming (Finalist)</strong><br>
+<em>John Nganga and Patrick M. Wensing</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper16">Abstract and Paper</button>
+<div id="paper16" class="collapse section-subheading-contrib">
+This abstract presents methods that reduce the
+computational demand of including second-order dynamics
+sensitivity information into optimization algorithms for robots
+in contact with the environment. The work extends a previous
+study on unconstrained whole-body motion planning. A full
+second-order Differential Dynamic Programming (DDP) algorithm is presented where all the necessary dynamics partial
+derivatives are computed with lower computational complexity
+than conventional DDP methods. Compared to using a firstorder approximation, the second-order partials more accurately
+represent the dynamics locally, but since they are tensorial and
+expensive to compute, they are often ignored. This work illustrates how to avoid the need for computing the derivative tensor
+by instead leveraging reverse-mode accumulation of derivatives.
+We also exploit the structure of the contact-constrained dynamics to further accelerate these computations. The relative
+performance of the proposed approach is benchmarked on a
+simulated model of the MIT Mini Cheetah executing a bounding
+gait
+<br> <br>
+<iframe src="./assets/pdfs/paper16.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+
+<div class="section-subheading-normal ">
+<strong>Impact-Invariant Running on the Cassie Bipedal Robot (Finalist)</strong><br>
+<em>William Yang and Michael Posa</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper17">Abstract and Paper</button>
+<div id="paper17" class="collapse section-subheading-contrib">
+Impact-invariant control is a general framework
+for adapting model-based controllers for robots undergoing
+impacts. The framework projects the tracking objectives into
+a subspace that is invariant to impact forces, thus resulting
+in a controller that is robust to uncertainties in the impact
+event while minimally sacrificing control authority. In this
+work, we apply impact-invariant control to a SLIP-inspired
+running controller for the bipedal robot Cassie. This, to our
+knowledge is the first example of a model-based running
+controller demonstrated on hardware for Cassie. We detail our
+controller framework and the effect of the impact-invariant
+projection on the stability of the controller.
+<br> <br>
+<iframe src="./assets/pdfs/paper17.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+
+<div class="section-subheading-normal ">
+<strong>Combining Reinforcement Learning and Trajectory Optimization for Multi-Contact Motion Planning & Control of Quadrupedal Locomotion (Finalist)</strong><br>
+<em>Vassilios Tsounis, Ruben Grandia, Farbod Farshidian, and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper28">Abstract and Paper</button>
+<div id="paper28" class="collapse section-subheading-contrib">
+This work addresses the problem of multi-contact
+motion planning for quadrupedal legged robots on non-flat
+terrain. A common challenge in this domain is the selection of a
+contact schedule (i.e. contact configurations and contact switching
+event times) and respective sequences of foothold positions. Our
+approach is centered on formulating Markov decision processes
+using the evaluation of kinematic and dynamic feasibility criteria
+in the form of linear programs and are used in place of physical
+simulation. The resulting MDPs are solved using a policy-
+gradient-based reinforcement learning algorithm. Specifically, we
+train neural-network policies which generate reference foothold
+positions, Center-of-Mass poses and velocities as well contact
+switching timings. We evaluate our method in unstructured
+environments using proprioceptive and exteroceptive sensory
+input and on a suite of relevant terrain scenarios such as stairs,
+gaps and stepping stones.
+<br> <br>
+<iframe src="./assets/pdfs/paper28.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+
+<h2 class="section-heading text-uppercase">Accepted Papers</h2>
+<div class="section-subheading-normal"> The proceedings of the 6th Workshop on Legged Robots.</div>
 
 <!--  <div class="section-subheading-normal">
 <iframe src="https://app.sli.do/event/7o3J2ppcy6HaG6JcwziDnD/embed/polls/ef4ae01a-1323-4545-99ef-66e5f921ca72" width="100%" height="400"></iframe>
