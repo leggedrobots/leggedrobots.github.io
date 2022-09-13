@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<title>6th Workshop on Legged Robots</title>
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+<!-- Using a Thumbnail -->
+<meta property='og:title' content='6th Workshop on Legged Robots'/>
+<meta property='og:image' content='https://leggedrobots.org/assets/img/slides_drawing.png'/>
+<meta property='og:description' content='This is the website for the 6th Legged Robotics Workshop at ICRA 2022'/>
+<meta property='og:url' content='leggedrobots.org'/>
+<meta property='og:type' content='website'/>
+</head>
+
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+<div class="container">
+<a class="navbar-brand page-scroll" href="./index.html">Workshop on Legged Robots</a>
+</div>
+</nav>
+
+
+<!-- Portfolio Grid-->
+<section class="page-section-big" id="contrib">
+<div class="container">
+<div class="text-center">
+<h2 class="section-heading text-uppercase">Best Papers</h2>
+<div class="section-subheading-normal">
+These are the papers that were selected for the best paper award.
+</div>
+<div class="section-subheading-normal">
+<strong>
+Quad-SDK: Full Stack Software Framework for Agile Quadrupedal Locomotion (Winner)<br></strong>
+<em>J. Norby, Y. Yang, A. Tajbakhsh, J. Ren, J. K. Yim, A. Stutt, Q. Yu, N. Flowers, and A. M. Johnson</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper19">Abstract and Paper</button>
+<div id="paper19" class="collapse section-subheading-contrib">
+This work presents Quad-SDK, an open source
+ROS-based full stack software framework for agile quadrupedal
+locomotion. The design of Quad-SDK is focused on the vertical
+integration of planning, control, estimation, communication,
+and development tools which enable agile quadrupedal locomotion in simulation and hardware with minimal user changes
+for multiple platforms. Furthermore, the modular software
+architecture allows researchers to experiment with their own
+implementations of different components while leveraging the
+existing framework. Quad-SDK also offers Gazebo simulation
+support and a suite of visualization and data-processing tools
+for rapid development. This work presents the high-level architecture of the software, its core features, and demonstrations
+of the agile locomotion it enables.
+<br> <br>
+<iframe src="./assets/pdfs/paper19.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+<div class="section-subheading-normal">
+<strong>Accelerating Hybrid Systems Differential Dynamic Programming (Finalist)</strong><br>
+<em>John Nganga and Patrick M. Wensing</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper16">Abstract and Paper</button>
+<div id="paper16" class="collapse section-subheading-contrib">
+This abstract presents methods that reduce the
+computational demand of including second-order dynamics
+sensitivity information into optimization algorithms for robots
+in contact with the environment. The work extends a previous
+study on unconstrained whole-body motion planning. A full
+second-order Differential Dynamic Programming (DDP) algorithm is presented where all the necessary dynamics partial
+derivatives are computed with lower computational complexity
+than conventional DDP methods. Compared to using a firstorder approximation, the second-order partials more accurately
+represent the dynamics locally, but since they are tensorial and
+expensive to compute, they are often ignored. This work illustrates how to avoid the need for computing the derivative tensor
+by instead leveraging reverse-mode accumulation of derivatives.
+We also exploit the structure of the contact-constrained dynamics to further accelerate these computations. The relative
+performance of the proposed approach is benchmarked on a
+simulated model of the MIT Mini Cheetah executing a bounding
+gait
+<br> <br>
+<iframe src="./assets/pdfs/paper16.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+
+<div class="section-subheading-normal ">
+<strong>Impact-Invariant Running on the Cassie Bipedal Robot (Finalist)</strong><br>
+<em>William Yang and Michael Posa</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper17">Abstract and Paper</button>
+<div id="paper17" class="collapse section-subheading-contrib">
+Impact-invariant control is a general framework
+for adapting model-based controllers for robots undergoing
+impacts. The framework projects the tracking objectives into
+a subspace that is invariant to impact forces, thus resulting
+in a controller that is robust to uncertainties in the impact
+event while minimally sacrificing control authority. In this
+work, we apply impact-invariant control to a SLIP-inspired
+running controller for the bipedal robot Cassie. This, to our
+knowledge is the first example of a model-based running
+controller demonstrated on hardware for Cassie. We detail our
+controller framework and the effect of the impact-invariant
+projection on the stability of the controller.
+<br> <br>
+<iframe src="./assets/pdfs/paper17.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+
+<div class="section-subheading-normal ">
+<strong>Combining Reinforcement Learning and Trajectory Optimization for Multi-Contact Motion Planning & Control of Quadrupedal Locomotion (Finalist)</strong><br>
+<em>Vassilios Tsounis, Ruben Grandia, Farbod Farshidian, and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper28">Abstract and Paper</button>
+<div id="paper28" class="collapse section-subheading-contrib">
+This work addresses the problem of multi-contact
+motion planning for quadrupedal legged robots on non-flat
+terrain. A common challenge in this domain is the selection of a
+contact schedule (i.e. contact configurations and contact switching
+event times) and respective sequences of foothold positions. Our
+approach is centered on formulating Markov decision processes
+using the evaluation of kinematic and dynamic feasibility criteria
+in the form of linear programs and are used in place of physical
+simulation. The resulting MDPs are solved using a policy-
+gradient-based reinforcement learning algorithm. Specifically, we
+train neural-network policies which generate reference foothold
+positions, Center-of-Mass poses and velocities as well contact
+switching timings. We evaluate our method in unstructured
+environments using proprioceptive and exteroceptive sensory
+input and on a suite of relevant terrain scenarios such as stairs,
+gaps and stepping stones.
+<br> <br>
+<iframe src="./assets/pdfs/paper28.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+
+
+<h2 class="section-heading text-uppercase">Accepted Papers</h2>
+<div class="section-subheading-normal"> The proceedings of the 6th Workshop on Legged Robots.</div>
+
+<!--  <div class="section-subheading-normal">
+<iframe src="https://app.sli.do/event/7o3J2ppcy6HaG6JcwziDnD/embed/polls/ef4ae01a-1323-4545-99ef-66e5f921ca72" width="100%" height="400"></iframe>
+</div> -->
+
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal">
+<strong>[1] High-Payload and Agile Hopping Leg Prototype (Original Work)</strong><br>
+<em>Giorgio Valsecchi and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper1">Abstract and Paper</button>
+<div id="paper1" class="collapse  section-subheading-contrib">
+This paper presents the design and experimental
+evaluations of an articulated robotic leg. The main scope
+of this new design is to combine high payload capabilities
+with agile locomotion. While both high payloads and agility
+have been achieved individually by different walking robots,
+designs intended for both have not been proposed yet. We
+optimized pseudo-direct-drive actuators to provide high torques
+density while simultaneously having good efficiency, low heat
+generation, and sufficient velocity to address the challenge. A
+two-DOF leg prototype has been designed and manufactured.
+The experimental test setup for the leg prototype is explained,
+and the results of the first hopping experiments are reported.
+<br> <br>
+<iframe src="./assets/pdfs/paper1.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[2] TAMOLS: Terrain-Aware Motion Optimization for Legged Systems (Recent Work)</strong><br>
+<em>Fabian Jenelten, Ruben Grandia, Farbod Farshidian, and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper2">Abstract and Paper</button>
+<div id="paper2" class="collapse section-subheading-contrib">
+Terrain geometry is, in general, non-smooth, nonlinear, non-convex, and, if perceived through a robot-centric
+visual unit, appears partially occluded and noisy. This work
+presents the complete control pipeline capable of handling the
+aforementioned problems in real-time. We formulate a trajectory
+optimization problem that jointly optimizes over the base pose
+and footholds, subject to a heightmap. To avoid converging into
+undesirable local optima, we deploy a graduated optimization
+technique. We embed a compact, contact-force free stability
+criterion that is compatible with the non-flat ground formulation.
+Our experiments demonstrate stair climbing, walking on stepping
+stones, and over gaps, utilizing various dynamic gaits.
+<br> <br>
+<iframe src="./assets/pdfs/paper2.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[3] WoLF: the Whole-body Locomotion Framework for Quadruped Robots (Recent Work)</strong><br>
+<em>Gennaro Raiola, Michele Focchi, and Enrico Mingo Hoffman</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper3">Abstract and Paper</button>
+<div id="paper3" class="collapse section-subheading-contrib">
+The Whole-Body Locomotion Framework (WoLF)
+is an end-to-end software suite devoted to the loco-manipulation
+of quadruped robots. WoLF abstracts the complexity of planning and control of quadrupedal robot hardware into a simple
+to use and robust software that can be connected through multiple tele-operation devices to different quadruped robot models.
+Furthermore, WoLF allows controlling mounted devices, such
+as arms or pan-tilt cameras, jointly with the quadrupedal
+platform. In this short paper, we introduce the main features
+of WoLF and its overall software architecture. 
+<br> <br>
+<iframe src="./assets/pdfs/paper3.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[4] Legged Navigation Planning in the DARPA Subterranean Challenge (Original Work)</strong><br>
+<em>Lorenz Wellhausen and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper4">Abstract and Paper</button>
+<div id="paper4" class="collapse section-subheading-contrib">
+Navigation planning for legged robots has distinct
+challenges compared to wheeled and tracked systems due to
+the ability to lift legs off the ground and step over obstacles.
+While most navigation planners assume a fixed traversability
+value for a single terrain patch, we had previously proposed a
+reachability-based navigation planner for legged robots, which
+approximates the robot morphology by a set of reachability and
+body volumes. It uses a learned convolutional neural network
+to restrict valid footholds to feasible regions and incrementally
+builds a probabilistic roadmap graph for fast planning queries.
+We extend this work using an additional neural network trained
+in simulation, which predicts locomotion cost and risk over
+a given terrain. This produces safe and low-cost paths and
+increases planning speed by leveraging batched processing
+of the cost prediction network on GPU to rapidly validate
+navigation graph edges through locomotion risk thresholding.
+We deployed this navigation planner in team CERBERUS’
+winning entry to the DARPA Subterranean Challenge finals,
+where the proposed planner powered the local navigation of
+four ANYmal quadrupeds during all three competition runs
+without a single navigation failure.
+<br> <br>
+<iframe src="./assets/pdfs/paper4.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[5] Prototyping Fast and Agile Motions for Legged Robots with Horizon (Recent Work)</strong><br>
+<em>Francesco Ruscelli, Arturo Laurenzi, Nikos G. Tsagarakis, and Enrico Mingo Hoffman</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper5">Abstract and Paper</button>
+<div id="paper5" class="collapse section-subheading-contrib">
+For legged robots to perform agile, highly dy-
+namic and contact-rich motions, whole-body trajectories com-
+putation of under-actuated complex systems subject to non-
+linear dynamics is required. In this work, we present hands-
+on applications of Horizon, a novel open-source framework
+for trajectory optimization tailored to robotic systems, that
+provides a collection of tools to simplify dynamic motion
+generation. Horizon was tested on a broad range of behaviours
+involving several robotic platforms: we introduce its building
+blocks and describe the complete procedure to generate three
+complex motions using its intuitive and straightforward API.
+<br> <br>
+<iframe src="./assets/pdfs/paper5.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[6] Dynamic Walking with Footstep Adaptation on the MIT Humanoid via Linear Model Predictive Control (Recent Work)</strong><br>
+<em>Yanran Ding, Charles Khazoom, Matthew Chignoli, and Sangbae Kim</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper6">Abstract and Paper</button>
+<div id="paper6" class="collapse section-subheading-contrib">
+ This paper proposes a model predictive control
+(MPC) framework for realizing dynamic walking gaits on the
+MIT Humanoid. In addition to adapting footstep location and
+timing online, the proposed method can reason about varying
+height, contact wrench, torso rotation, kinematic limit and
+negotiating uneven terrains. Specifically, a linear MPC (LMPC)
+optimizes for the desired footstep location by linearizing the
+single rigid body dynamics with respect to the current footstep
+location. A low-level task-space controller tracks the predicted
+state and control trajectories from the LMPC to leverage the
+full-body dynamics. Finally, an adaptive gait frequency scheme
+is employed to modify the step frequency and enhance the
+robustness of the walking controller. 
+Both LMPC and taskspace control can be efficiently solved as quadratic programs
+(QP), and thus amenable for real-time applications. Simulation
+studies where the MIT Humanoid traverses a wave field and
+recovers from impulsive disturbances validated the proposed
+approach.
+<br> <br>
+<iframe src="./assets/pdfs/paper6.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[7] Wild ANYmal: Learning Robust Perceptive Locomotion (Recent Work)</strong><br>
+<em>Takahiro Miki, Joonho Lee, Jemin Hwangbo, Lorenz Wellhausen, Vladlen Koltun, and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper7">Abstract and Paper</button>
+<div id="paper7" class="collapse section-subheading-contrib">
+Legged robots that can operate autonomously
+in remote and hazardous environments will greatly increase
+opportunities for exploration into under-explored areas. Exteroceptive perception is crucial for fast and energy-efficient
+locomotion: perceiving the terrain before making contact with
+it enables planning and adaptation of the gait ahead of time to
+maintain speed and stability. However, utilizing exteroceptive
+perception robustly for locomotion has remained a grand
+challenge in robotics. Snow, vegetation, and water visually
+appear as obstacles on which the robot cannot step – or
+are missing altogether due to high reflectance. Additionally,
+depth perception can degrade due to difficult lighting, dust,
+fog, reflective or transparent surfaces, sensor occlusion, and
+more. For this reason, the most robust and general solutions
+to legged locomotion to date rely solely on proprioception.
+This severely limits locomotion speed, because the robot has
+to physically feel out the terrain before adapting its gait
+accordingly. Here we present a robust and general solution
+to integrating exteroceptive and proprioceptive perception for
+legged locomotion. We leverage an attention-based recurrent
+encoder that integrates proprioceptive and exteroceptive input.
+The encoder is trained end-to-end and learns to seamlessly
+combine the different perception modalities without resorting
+to heuristics. The result is a legged locomotion controller with
+high robustness and speed.
+<br> <br>
+<iframe src="./assets/pdfs/paper7.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[8] Loco-Manipulation Planning for Legged Robots: Offline and Online Strategies (Recent Work)</strong><br>
+<em>Luca Rossini, Paolo Ferrari, Francesco Ruscelli, Arturo Laurenzi, Nikos G. Tsagarakis, and Enrico Mingo Hoffman</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper8">Abstract and Paper</button>
+<div id="paper8" class="collapse section-subheading-contrib">
+The deployment of robots within realistic environments requires the capability to plan and refine the locomanipulation trajectories on the fly to avoid unexpected interactions with a dynamic environment. This extended abstract
+provides a pipeline to offline plan a configuration space global
+trajectory based on a randomized strategy, and to online locally
+refine it depending on any change of the dynamic environment
+and the robot state. The offline planner directly plans in the
+contact space, and additionally seeks for whole-body feasible
+configurations compliant with the sampled contact states. The
+planned trajectory, made by a discrete set of contacts and
+configurations, can be seen as a graph and it can be online
+refined during the execution of the global trajectory. The online
+refinement is carried out by a graph optimization planner
+exploiting visual information. It locally acts on the global initial
+plan to account for possible changes in the environment. While
+the offline planner is a concluded work, tested on the humanoid
+COMAN+, the online local planner is still a work-in-progress
+which has been tested on a reduced model of the CENTAURO
+robot to avoid dynamic and static obstacles interfering with a
+wheeled motion task. Both the COMAN+ and the CENTAURO
+robots have been designed at the Italian Institute of Technology
+(IIT).
+<br> <br>
+<iframe src="./assets/pdfs/paper8.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[9] A Quadruped Inertial Param Estimation Method with End-Effectors Bi-sectional Search and Sinusoidal Rotation Excitations (Original Work)</strong><br>
+<em>Chi Yen Lee and Zachary Manchester</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper9">Abstract and Paper</button>
+<div id="paper9" class="collapse section-subheading-contrib">
+In this paper, we introduce a two-step calibration
+routine to identify the planar center of mass (CoM) position and
+the effective centroidal dynamics parameters of any quadruped
+using only joint sensors and an inertial measurement unit
+(IMU). Our proposed calibration routine consists of two steps:
+A bisection search method is used to locate the position of
+the planar CoM, and a sinusoidal excitation method is used
+to extract moments of inertia about each body axis. We verifu
+the inertial parameter identification method in simulation, and
+we implemented the center of mass finding algorithm in both
+simulation and hardware. The results of hardware CoM finding
+experiments verified in a balancing controller that requires
+5mm CoM position accuracy.
+<br> <br>
+<iframe src="./assets/pdfs/paper9.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[10] A Lie Algebraic Model Predictive Control for Legged Robot Control: Implementation and Stability Analysis (Recent Work)</strong><br>
+<em>Sangli Teng and Maani Ghaffari</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper10">Abstract and Paper</button>
+<div id="paper10" class="collapse section-subheading-contrib">
+Rigid body model has been widely adopted to
+plan the centroidal motion of legged robot. However, the
+rigid body motion evolves on the SE(3) manifold, which is
+nonlinear and not trivial to parameterize. The existing Model
+Predictive Control (MPC) either uses local parameterization
+that suffers from singularities, or geometric based liearization
+that makes the problem state dependent or hard to vectorize.
+In this work, we focus on the MPC on matrix Lie group.
+We linearize the configuration error and design a quadratic
+cost function in its Lie algebra. Given an initial condition, the
+linearized configuration error dynamics is globally valid and
+evolve independently of the system trajectory. The quadratic
+cost function could also ensure exponential convergence rate.
+The proposed MPC has been experimentally validated in MIT
+mini Cheetah locomotion and pose control.
+<br> <br>
+<iframe src="./assets/pdfs/paper10.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[11] Nonlinear Model Predictive Control for Quadrupedal Locomotion Using Second-Order Sensitivity Analysis (Original Work)</strong><br>
+<em>Dongho Kang, Flavio De Vincenti, Stelian Coros</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper11">Abstract and Paper</button>
+<div id="paper11" class="collapse section-subheading-contrib">
+We present a versatile nonlinear model predictive
+control (NMPC) approach for quadrupedal locomotion. Our
+formulation jointly optimizes a base trajectory and a set
+of footholds over a finite time horizon based on simplified
+dynamics models. We leverage second-order sensitivity analysis
+and a sparse Gauss-Newton (SGN) method to solve the resulting
+optimal control problems. We further describe our ongoing
+effort to verify our approach through simulation and hardware
+experiments. Finally, we extend our locomotion framework
+to deal with challenging tasks that comprise gap crossing,
+movement on stepping stones, and multi-robot control.
+<br> <br>
+<iframe src="./assets/pdfs/paper11.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[12] Neck Design for Robust Visual-Inertial State Estimation during Aggressive Locomotion with Dynamic Vibration Absorber (Original Work)</strong><br>
+<em>Taekyun Kim and Dongjun Lee</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper12">Abstract and Paper</button>
+<div id="paper12" class="collapse section-subheading-contrib">
+We propose a new neck design of legged robots
+to achieve robust visual-inertial state estimation in dynamic
+locomotion. Our neck design absorbs the impact from the
+legs and reduces the periodic vertical movement of the head
+using the dynamic vibration absorber (DVA), which can readily
+adapt to the frequency of oscillation of the body. Due to this
+smooth movement of the head, sensors in the head can measure
+data stably, which is impossible when sensors are directly
+attached to the body. We present the mechanical design of the
+neck as a combination of suspension mechanism with dynamic
+vibration absorber, which provide an adjustable notch filter for
+the vertical motion of the robot. Simulation and experimental
+results are performed to verify the effect of the proposed neck
+on the head of robots, manifesting that the states estimated
+from the visual-inertial sensors on the head can be precise
+even during aggressive motion by rendering both the inertial
+information and the feature tracking more stable and robust.
+The presented design can overcome the disadvantage that the
+localization of robots with legs can only operate well in gentle
+locomotion.
+<br> <br>
+<iframe src="./assets/pdfs/paper12.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[13] Reaction Wheel Assisted Locomotion for Legged Robots (Original Work)</strong><br>
+<em>Chi-Yen Lee, Shuo Yang, Benjamin Bokser, and Zachary Manchester</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper13">Abstract and Paper</button>
+<div id="paper13" class="collapse section-subheading-contrib">
+In this paper, we introduce a Model Predictive
+Control (MPC) formulation that calculates the ground reaction forces and torques for a quadruped equipped with two
+reaction wheels. We augment the centroidal dynamics with two
+additional angular momentum states from the wheels, and we
+further simplify the dynamics to formulate the problem as a
+convex quadratic program. With the simplified dynamics, we
+are able to run a hardware implementation of the MPC with a
+ten-time-step horizon and close the control loop at 250 Hertz.
+Experiment and simulation results demonstrate improved attitude stabilization and up to 40 percent reduction in angular
+error. A video demonstration of some of the experiments is
+available1
+. Our approach and formulation provide a framework
+for more involved acrobatic maneuvers for future work.
+<br> <br>
+<iframe src="./assets/pdfs/paper13.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[14] On the Hardware Design and Control Architecture of the Humanoid Robot Kangaroo (Original Work)</strong><br>
+<em>Adria Roig, Sai Kishor Kothakota, Narcis Miguel, Pierre Fernbach, Enrico Mingo Hoffman and Luca Marchionni</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper14">Abstract and Paper</button>
+<div id="paper14" class="collapse section-subheading-contrib">
+Humanoid bipedal platforms are finally moving
+from controlled lab environments to real-world applications in
+unstructured scenarios. This has been recently achieved with 
+substantial improvements in hardware and software architectures.
+In particular, the hardware design of bipedal humanoid robots
+has changed to be robust and resilient to impacts, as well as
+lightweight and efficient for dynamic movements. At the same
+time, planning and control architectures permit now to generate
+and control high dynamic, contact rich, motions employing the
+dynamics and the full body of the system.
+In this short paper, we present Kangaroo, a new humanoid
+bipedal robot designed by PAL Robotics for research on agile
+and dynamic locomotion. Kangaroo exploits novel mechanical
+solutions based on linear actuators and closed/parallel kinematics
+chains. We present the mechanical design and the whole planning
+and control pipeline developed to make Kangaroo jump on
+real experiments to demonstrate the superior robustness and
+resilience of the platform.
+<br> <br>
+<iframe src="./assets/pdfs/paper14.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[15] Optimal Motion Planning for Quadruped Manipulators in Heavy Payload Transportation Tasks (Recent Work)</strong><br>
+<em>Ioannis Dadiotis, Arturo Laurenzi and Nikos Tsagarakis</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper15">Abstract and Paper</button>
+<div id="paper15" class="collapse section-subheading-contrib">
+This work presents a simplified model-based tra-
+jectory optimization (TO) formulation for planning motions on
+quadruped mobile manipulators that locomote while carrying
+heavy payload. The formulation considers both robot and
+payload dynamics and simultaneously plans locomotion and
+payload manipulation trajectories. Thanks to the heavy payload
+manipulation planning the resulted payload-aware planner
+is less prone to leg singular configurations in kinematically
+demanding motions compared to its locomotion-only counter-
+part. The method is validated on the quadruped bi-manual
+CENTAURO robot carrying a payload that consists 85 % of
+the arms’ payload capacity and exceeds 15 % of the robot’s
+mass.
+<br> <br>
+<iframe src="./assets/pdfs/paper15.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[16] Accelerating Hybrid Systems Differential Dynamic Programming (Original Work)</strong><br>
+<em>John Nganga and Patrick M. Wensing</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper16">Abstract and Paper</button>
+<div id="paper16" class="collapse section-subheading-contrib">
+This abstract presents methods that reduce the
+computational demand of including second-order dynamics
+sensitivity information into optimization algorithms for robots
+in contact with the environment. The work extends a previous
+study on unconstrained whole-body motion planning. A full
+second-order Differential Dynamic Programming (DDP) algorithm is presented where all the necessary dynamics partial
+derivatives are computed with lower computational complexity
+than conventional DDP methods. Compared to using a firstorder approximation, the second-order partials more accurately
+represent the dynamics locally, but since they are tensorial and
+expensive to compute, they are often ignored. This work illustrates how to avoid the need for computing the derivative tensor
+by instead leveraging reverse-mode accumulation of derivatives.
+We also exploit the structure of the contact-constrained dynamics to further accelerate these computations. The relative
+performance of the proposed approach is benchmarked on a
+simulated model of the MIT Mini Cheetah executing a bounding
+gait
+<br> <br>
+<iframe src="./assets/pdfs/paper16.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[17] Impact-Invariant Running on the Cassie Bipedal Robot (Original Work)</strong><br>
+<em>William Yang and Michael Posa</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper17">Abstract and Paper</button>
+<div id="paper17" class="collapse section-subheading-contrib">
+Impact-invariant control is a general framework
+for adapting model-based controllers for robots undergoing
+impacts. The framework projects the tracking objectives into
+a subspace that is invariant to impact forces, thus resulting
+in a controller that is robust to uncertainties in the impact
+event while minimally sacrificing control authority. In this
+work, we apply impact-invariant control to a SLIP-inspired
+running controller for the bipedal robot Cassie. This, to our
+knowledge is the first example of a model-based running
+controller demonstrated on hardware for Cassie. We detail our
+controller framework and the effect of the impact-invariant
+projection on the stability of the controller.
+<br> <br>
+<iframe src="./assets/pdfs/paper17.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[18] Whole Body Nonlinear Model Predictive Control for Legged Robots (Recent Work)</strong><br>
+<em>Avadesh Meduri, Paarth Shah, Julian Viereck, Majid Khadiv, Ioannis Havoutis and Ludovic Righetti</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper18">Abstract and Paper</button>
+<div id="paper18" class="collapse section-subheading-contrib">
+Online planning of whole-body motions for legged
+robots is challenging due to the inherent nonlinearity in the
+robot dynamics. To address this limitation, we propose a nonlinear MPC framework, the BiConMP, which can generate whole
+body trajectories online by efficiently exploiting the structure
+of the robot dynamics. BiConMP is used to generate various
+cyclic gaits on a real quadruped robot and its performance
+is evaluated on different terrain, countering unforeseen pushes
+and transitioning online between different gaits. Further, we
+demonstrate the ability of BiConMP to generate non-trivial
+acyclic whole-body dynamic motions on the robot. Finally, an
+extensive empirical analysis on the effects of planning horizon
+and frequency on the nonlinear MPC framework is reported
+and discussed.
+<br> <br>
+<iframe src="./assets/pdfs/paper18.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[19] Quad-SDK: Full Stack Software Framework for Agile Quadrupedal Locomotion (Original Work)</strong><br>
+<em>Joseph Norby, Yanhao Yang, Ardalan Tajbakhsh, Jiming Ren, Justin K. Yim, Alexandra Stutt, Qishun Yu, N. Flowers, and Aaron M. Johnson</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper19">Abstract and Paper</button>
+<div id="paper19" class="collapse section-subheading-contrib">
+This work presents Quad-SDK, an open source
+ROS-based full stack software framework for agile quadrupedal
+locomotion. The design of Quad-SDK is focused on the vertical
+integration of planning, control, estimation, communication,
+and development tools which enable agile quadrupedal locomotion in simulation and hardware with minimal user changes
+for multiple platforms. Furthermore, the modular software
+architecture allows researchers to experiment with their own
+implementations of different components while leveraging the
+existing framework. Quad-SDK also offers Gazebo simulation
+support and a suite of visualization and data-processing tools
+for rapid development. This work presents the high-level architecture of the software, its core features, and demonstrations
+of the agile locomotion it enables.
+<br> <br>
+<iframe src="./assets/pdfs/paper19.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[20] Reactive Locomotion Decision-Making and Robust Motion Planning for Real-Time Perturbation Recovery (Recent Work)</strong><br>
+<em>Zhaoyuan Gu, Nathan Boyd, and Ye Zhao</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper20">Abstract and Paper</button>
+<div id="paper20" class="collapse section-subheading-contrib">
+In this abstract, we examine the problem of push
+recovery for bipedal robot locomotion and present a reactive
+decision-making and robust planning framework for locomotion
+resilient to external perturbations. Rejecting perturbations is
+an essential capability of bipedal robots and has been widely
+studied in the locomotion literature. However, adversarial
+disturbances and aggressive turning can lead to negative lateral
+step width (i.e., crossed-leg scenarios) with unstable motions
+and self-collision risks. These motion planning problems are
+computationally difficult and have not been explored under a
+hierarchically integrated task and motion planning method. We
+explore a planning and decision-making framework that closely
+ties linear-temporal-logic-based reactive synthesis with trajectory optimization incorporating the robot’s full-body dynamics,
+kinematics, and leg collision avoidance constraints. Between
+the high-level discrete symbolic decision-making and the lowlevel continuous motion planning, behavior trees serve as a
+reactive interface to handle perturbations occurring at any time
+of the locomotion process. Our experimental results show the
+efficacy of our method in generating resilient recovery behaviors
+in response to diverse perturbations from any direction with
+bounded magnitudes.
+<br> <br>
+<iframe src="./assets/pdfs/paper20.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[21] ProxNLP: A Primal-Dual Augmented Lagrangian solver for Nonlinear Programming in Robotics and Beyond (Recent Work)</strong><br>
+<em>Wilson Jallet, Antoine Bambade, Nicolas Mansard and Justin Carpentier</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper21">Abstract and Paper</button>
+<div id="paper21" class="collapse section-subheading-contrib">
+Mathematical optimization is the workhorse be-
+hind several aspects of modern robotics and control. In these
+applications, the focus is on constrained optimization, and the
+ability to work on manifolds (such as the classical matrix
+Lie groups), along with a specific requirement for robustness
+and speed. In recent years, augmented Lagrangian methods
+have seen a resurgence due to their robustness and flexibility,
+their connections to (inexact) proximal-point methods, and
+their interoperability with Newton or semismooth Newton
+methods. In the sequel, we present primal-dual augmented
+Lagrangian method for inequality-constrained problems on
+manifolds, which we introduced in our recent work, as well
+as an efficient C++ implementation suitable for use in robotics
+applications and beyond.
+<br> <br>
+<iframe src="./assets/pdfs/paper21.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[22] Proprioception and Tail Control Enable Extreme Terrain Traversal by Quadruped Robots (Original Work)</strong><br>
+<em>Yanhao Yang, Joseph Norby, Justin K. Yim, and Aaron M. Johnson</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper22">Abstract and Paper</button>
+<div id="paper22" class="collapse section-subheading-contrib">
+Legged robotic systems leverage ground contact and
+the reaction forces they provide to achieve agile locomotion.
+However, uncertainty coupled with the discontinuous nature of
+contact can lead to failure in real-world environments with
+unexpected height variations, such as rocky hills or curbs. To
+enable dynamic traversal of extreme terrain, this work introduces
+the utilization of proprioception to estimate and react to unknown
+hybrid events and elevation changes and a two-degree-of-freedom
+tail to improve control independent of contact. Simulation results
+over unforeseen elevation changes show that our method can
+stabilize locomotion over height changes of up to 1.5 times the
+leg length.
+<br> <br>
+<iframe src="./assets/pdfs/paper22.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[23] Using a Legged Manipulator for Nonprehensile Object Transportation (Recent Work)</strong><br>
+<em>Viviana Morlando, Mario Selvaggio, and Fabio Ruggiero</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper23">Abstract and Paper</button>
+<div id="paper23" class="collapse section-subheading-contrib">
+This paper tackles the problem of nonprehensile
+object transportation through a legged manipulator. A wholebody control architecture is devised to prevent sliding of the
+object placed on a tray-like end-effector and retain the legged
+robot balance during walking. The controller solves a quadratic
+optimization problem to realize the sought transportation task
+while maintaining the contact forces between the tray and
+the object and between the legs and the ground within their
+respective friction cones.
+<br> <br>
+<iframe src="./assets/pdfs/paper23.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[24] Rapid Locomotion via Reinforcement Learning (Recent Work)</strong><br>
+<em>Gabriel B Margolis, Ge Yang, Kartik Paigwar, Tao Chen, and Pulkit Agrawal</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper24">Abstract and Paper</button>
+<div id="paper24" class="collapse section-subheading-contrib">
+Agile maneuvers such as sprinting and high-speed
+turning in the wild are challenging for legged robots. Reinforcement learning provides a promising framework for addressing
+this challenge. We present an end-to-end learned controller that
+achieves record agility for the MIT Mini Cheetah, sustaining
+speeds up to 3.9 m/s. This system runs and turns fast on
+natural terrains like grass, ice, and gravel and responds robustly
+to disturbances. Our controller is a neural network trained
+in simulation via reinforcement learning and transferred to
+the real world. The two key components are: (i) an adaptive
+curriculum on velocity commands; and (ii) an online system
+identification strategy for sim-to-real transfer leveraged from
+prior work. Videos of the robot’s behaviors are available at:
+https://agility.csail.mit.edu/.
+<br> <br>
+<iframe src="./assets/pdfs/paper24.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[25] Monte Carlo Tree Search Gait Planner for Non-Gaited Legged System Control (Recent Work)</strong><br>
+<em>Lorenzo Amatucci, Joon-Ha Kim, Jemin Hwangbo and Hae-Won Park</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper25">Abstract and Paper</button>
+<div id="paper25" class="collapse section-subheading-contrib">
+In this work, we show the implementation of a
+control framework for non-gaited legged system control. The
+presented approach decouples the gait optimization from the
+motion stabilization treating the contact phase as a decision
+variable. The system has been tested against the state-of-theart Mixed Integer Quadratic Programming solver and verified
+in various simulation environments.
+<br> <br>
+<iframe src="./assets/pdfs/paper25.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[26] Towards a Foothold Evaluation Criterion for Dynamic Transition Feasibility (Recent Work)</strong><br>
+<em>Angelo Bratta, Luca Clemente, Octavio Villarreal, Michele Focchi, Victor Barasuol, Giovanni Gerardo Muscolo, and Claudio Semini</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper26">Abstract and Paper</button>
+<div id="paper26" class="collapse section-subheading-contrib">
+In this extended abstract we give a brief
+introduction to our work [1]. We propose a foothold evaluation
+criterion that considers the transition feasibility for both linear
+and angular dynamics to overcome complex scenarios. We
+present convex and nonlinear formulations as a direct extension
+of [2] in a receding-horizon fashion to take into account
+also angular dynamics. The criterion is integrated with a
+Vision-based Foothold Adaptation (VFA) strategy that considers
+robot kinematics, leg collisions and terrain morphology. We
+verify the validity of the selected footholds and of the generated
+trajectories in simulation and experiments with the 90kg
+quadruped robot HyQ.
+<br> <br>
+<iframe src="./assets/pdfs/paper26.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[27] Towards Legged Robots for Planetary Exploration (Recent Work)</strong><br>
+<em>Hendrik Kolvenbach, Philip Arm, Giorgio Valsecchi, Nikita Rudin and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper27">Abstract and Paper</button>
+<div id="paper27" class="collapse section-subheading-contrib">
+Robotic exploration of celestial bodies has been
+performed solely with wheeled systems until today, making access
+to highly unstructured, compressible, and sloped areas very
+challenging. On the other hand, walking robots have advanced
+rapidly over the last decade and have reached a maturity level
+where commercial applications have become viable. Thus, it
+is only a matter of time until walking robots will be used to
+explore so far unreachable regions of our solar system. In this
+work, we showcase the recent advancements of our dynamically
+walking legged systems for future planetary exploration missions.
+In detail, we summarize our work performed on walking on
+steep, granular slopes, low-gravity locomotion, robot-payload
+integration and mission scenario execution. Finally, we showcase
+several real-world deployments and our lessons learned from
+the experiments.
+<br> <br>
+<iframe src="./assets/pdfs/paper27.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+<div class="section-subheading-normal ">
+<strong>[28] Combining Reinforcement Learning and Trajectory Optimization for Multi-Contact Motion Planning & Control of Quadrupedal Locomotion (Recent Work)</strong><br>
+<em>Vassilios Tsounis, Ruben Grandia, Farbod Farshidian, and Marco Hutter</em><br>
+<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#paper28">Abstract and Paper</button>
+<div id="paper28" class="collapse section-subheading-contrib">
+This work addresses the problem of multi-contact
+motion planning for quadrupedal legged robots on non-flat
+terrain. A common challenge in this domain is the selection of a
+contact schedule (i.e. contact configurations and contact switching
+event times) and respective sequences of foothold positions. Our
+approach is centered on formulating Markov decision processes
+using the evaluation of kinematic and dynamic feasibility criteria
+in the form of linear programs and are used in place of physical
+simulation. The resulting MDPs are solved using a policy-
+gradient-based reinforcement learning algorithm. Specifically, we
+train neural-network policies which generate reference foothold
+positions, Center-of-Mass poses and velocities as well contact
+switching timings. We evaluate our method in unstructured
+environments using proprioceptive and exteroceptive sensory
+input and on a suite of relevant terrain scenarios such as stairs,
+gaps and stepping stones.
+<br> <br>
+<iframe src="./assets/pdfs/paper28.pdf#zoom=FitW" height="1000" width="100%"></iframe>
+</div>
+</div>
+<!-- ============================================================================================================= -->
+<!-- ============================================================================================================= -->
+</section>
+
+
+
+<!-- Footer-->
+<footer class="footer py-4">
+<div class="container">
+<div class="">Copyright © Shamel Fahmi 2022</div>
+
+</div>
+</footer>
+
+
+
+
+
+<!-- Bootstrap core JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
